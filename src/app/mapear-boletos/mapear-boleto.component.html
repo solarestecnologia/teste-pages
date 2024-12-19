@@ -1,0 +1,63 @@
+<div class="row">
+  <div class="col-12">
+    <mat-card>
+      <mat-card-content>
+        <mat-card-title>Mapear Boletos</mat-card-title>
+        <mat-card-subtitle>Fase 1 para o Mapeamento de novos boletos</mat-card-subtitle>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-12">
+    <mat-card>
+      <mat-card-content>
+        <form (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-4">
+              <mat-form-field class="example-full-width">
+                <mat-label>Produto</mat-label>
+                <input matInput placeholder="Ex. COE" value="">
+              </mat-form-field>
+            </div>
+            <div class="col-8">
+            </div>
+            <div class="col-4">
+              <mat-form-field class="example-full-width">
+                <mat-label>Evento</mat-label>
+                <input matInput placeholder="Ex. Emissao" value="">
+              </mat-form-field>
+            </div>
+            <div class="col-8">
+              <mat-label>Selecione arquivos PDF </mat-label>
+              <input type="file" id="pdfInput" accept=".pdf" multiple>
+            </div>
+            <div class="col-4">
+              <mat-form-field class="example-full-width">
+                <mat-label>Produto</mat-label>
+                <input matInput placeholder="Ex. COE" value="">
+              </mat-form-field>
+            </div>
+            <div class="col-8">
+              <mat-label>Selecione arquivos CSV ou XLSX:   </mat-label>
+              <input  type="file" id="csvXlsxInput" accept=".csv, .xlsx">
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <h1>
+
+              </h1>
+              <button mat-raised-button color="primary" type="submit">
+                <mat-icon>send</mat-icon>
+                Enviar
+              </button>
+            </div>
+          </div>
+        </form>
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
